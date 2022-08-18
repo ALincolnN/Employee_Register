@@ -32,4 +32,4 @@ def register(request,id=0):
 
 
 def delete(request):
-    return render(request, 'employee_list.html')
+    return redirect('/')

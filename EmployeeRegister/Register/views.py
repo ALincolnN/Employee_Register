@@ -31,5 +31,7 @@ def register(request,id=0):
         return redirect('/')
 
 
-def delete(request):
+def delete(request,id):
+    employee= Employee.objects.get(pk=id)
+    employee.delete()
     return redirect('/')
